@@ -117,3 +117,8 @@ input:hover {
     opacity: 1;
   }
 }
+
+#selected ul li .g_to_style:hover {
+  opacity: 1;
+  cursor: auto;
+}
