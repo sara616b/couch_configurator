@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Couch configurator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <section id="product">
+        <div id="couch_svg"></div>
+      </section>
+      <section id="info">
+        <h2>Couch Designer</h2>
+        <p>Costumize your own beautiful couch</p>
+        <div id="selected">
+          Selected features:
+          <ul></ul>
+        </div>
+      </section>
+
+      <section id="options">
+        <p>Change colors:</p>
+        <div id="colors">
+          <svg id="color_rect" viewBox="0 0 770 120">
+            <rect class="color_btn" width="100" height="100" fill="#1E5085" />
+            <rect
+              class="color_btn"
+              x="110"
+              width="100"
+              height="100"
+              fill="#C2DEFC"
+            />
+            <rect
+              class="color_btn"
+              x="220"
+              width="100"
+              height="100"
+              fill="#699BD1"
+            />
+            <rect
+              class="color_btn"
+              x="330"
+              width="100"
+              height="100"
+              fill="#F0B83E"
+            />
+            <rect
+              class="color_btn"
+              x="440"
+              width="100"
+              height="100"
+              fill="#CF9840"
+            />
+            <rect
+              class="color_btn"
+              x="550"
+              width="100"
+              height="100"
+              fill="#F0D292"
+            />
+            <rect
+              class="color_btn"
+              x="660"
+              width="100"
+              height="100"
+              fill="#1D313D"
+            />
+          </svg>
+          <div id="color_input">
+            <p>Choose color</p>
+            <input type="color" name="color_input" />
+          </div>
+        </div>
+        <p>Add or remove extras:</p>
+        <div id="extras">
+          <figure class="option" data-feature="carpet">
+            <svg viewBox="0 0 7656 3888">
+              <g id="carpet" class="g_to_style" style="isolation: isolate">
+                <path
+                  d="M7514,2843c-5.53-9-17.15-42.29-28-46-.76-45.91-2.23-88.43-44-101-8.55-27.95-2.52-40.09-35-45-37.9-82.86-291.83-284.54-381-322-45.75-19.22-97.25-24.45-142-41-23.15-8.56-51.41-60.06-84-23-7.27-.59-21.81-3.08-41.35-6.57-7.14,7-18.76,12.06-24.75,19.55-144.7-1.16-316.1-1.32-512-.77,16.54,101.34,32.63,277.29,47,404.77-2.08-3.89-6.33,11-10,15-25.74-10.48-40.44,6-59,18-10.43-9.65-34.56-44.78-31.29-30.95-44.3-187.57-71-255.27-98.83-406.29C5025,2282.13,3377.13,2302.25,1408.9,2300c-29.78,135.22-93.35,397.49-94,403-1.12,9.54-36.11-1.58-52,18-1.93,2.38-30.21-3.89-50-8,5.88-140.16,37.23-370.41,43.09-407l-2.09,0c-26.51-2.61-63.3,3.09-93,1-175.2-10.61-356.48,3.88-403-6-7.81-1.66-16.21-29.4-24.33-84q-26.36,2.51-51.57,5c-33.36,11-65,25.8-81,52-6.52,10.69,5.28,18.05-7,25-16.66,9.43-36.84,4.53-48,10l-48,39c-62.1,39.75-129.64,61.45-187,102q.5,16,1,32l-27,4-68,73c-36.61,45.11-69.87,116.13-89,175-74,227.82,98.55,413.13,203,503,199.71,171.82,412.58,238.38,699,327-145.22-44.93,364,91.12,674,104h80c132.19,8.62,359.58,29.46,540,34,79.32,2,184.81,20.26,260,26s315.07,13.66,342-17c16.24.09,30,21.33,60,13,14.47-4,76.43-21.94,90-20l50,20c19.42,4.19,21.85-17,33-14,10.05,2.71,9.58,18.76,27,16,81.75-13,209.63-16.22,290,2l246-13,238,21,278-10c13.26-2.11,48-20.74,51-20,9.89,2.46,186.24,28.57,217,18,10.73-3.69,71.71-16.24,92-12,35.47,7.42,82.36-3,116,2,161.83,23.92,347.34,8.77,498-16l142,6,150-6c22.54,4.64,42.24,19.88,69,24,66.72-28.92,132.51-.17,191-14l68-20,78-2,106-28,116-4,88-51c38.42-12.83,84.78-5.61,124-17l129-50,63,1c83.64-15.86,170.24-55.9,235-95,26.69,15.71,50.84-6.41,68-18,24.75,13.15,48.94-18,73-22,190.38-31.85,522.93-231.22,573-408,16.28-57.47,46.33-46,9-103C7496.55,2872.78,7503.64,2858.29,7514,2843Z"
+                />
+              </g>
+              <g id="shadow_Image" data-name="shadow Image">
+                <image
+                  id="shadow_Image-2"
+                  data-name="shadow Image"
+                  width="7656"
+                  height="3888"
+                  xlink:href="couch1.png"
+                />
+              </g>
+            </svg>
+            <figcaption>Carpet</figcaption>
+          </figure>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

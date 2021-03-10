@@ -1,0 +1,119 @@
+html {
+  font-family: sans-serif;
+  margin: 0;
+  background-color: rgb(240, 240, 240);
+}
+img {
+  width: 100%;
+}
+main {
+  display: grid;
+  grid-template-areas:
+    "product product info"
+    "product product info"
+    "options options options";
+  gap: 1em;
+  max-width: 1000px;
+  margin: 20px auto auto auto;
+}
+#product,
+#info,
+#options {
+  box-shadow: 3px 3px 8px rgb(202, 202, 202);
+  padding: 20px;
+}
+#product {
+  grid-area: product;
+  background-color: white;
+}
+#couch_svg {
+  min-width: 200px;
+}
+#info {
+  grid-area: info;
+  background-color: white;
+}
+
+#info p + p {
+  text-transform: uppercase;
+  color: #949494;
+  font-size: 0.8rem;
+}
+#selected ul {
+  padding: 0;
+}
+#selected li {
+  width: 100px;
+  list-style-type: none;
+  margin: 0;
+}
+figure {
+  margin: 0;
+}
+#options {
+  grid-area: options;
+  background-color: rgb(245, 245, 245);
+}
+#options p {
+  margin: 0 0 5px 0;
+  font-size: 0.8rem;
+  color: rgb(75, 75, 75);
+}
+#colors {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+#color_rect {
+  width: 90%;
+}
+#color_input p {
+  padding: 5px 0;
+  margin: 0;
+  font-size: 0.7rem;
+}
+input[type="color"] {
+  border: none;
+}
+#extras figure {
+  width: 150px;
+  background-color: white;
+}
+
+figcaption {
+  text-align: center;
+  color: rgb(146, 146, 146);
+  text-transform: uppercase;
+}
+.g_to_style:hover,
+#colors rect:hover,
+#options figure:hover,
+input:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+.g_to_style {
+  stroke-width: 10;
+  opacity: 1;
+}
+#shadow_Image {
+  pointer-events: none;
+}
+.hide {
+  display: none;
+}
+
+.in_animation {
+  animation-name: in_kf;
+  animation-duration: 5s;
+}
+
+@keyframes in_kf {
+  0% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
