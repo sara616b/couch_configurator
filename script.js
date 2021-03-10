@@ -64,7 +64,7 @@ function toggleOption(event) {
 
   if (features[feature]) {
     target.classList.add("chosen");
-    let previewPic = document.querySelector("#couch_svg #" + feature + "2");
+    let previewPic = document.querySelector("#couch_svg #" + feature);
 
     previewPic.classList.remove("hide");
     previewPic.classList.add("in_animation");
